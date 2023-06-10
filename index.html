@@ -39,6 +39,21 @@
             width: 100px;            
             height: 100px;
         }
+
+        .scroll-bar{
+            height: 271px;
+            overflow-y: scroll;
+        }
+
+        .scroll-bar::-webkit-scrollbar {
+            width: 5px;
+            background: #212529;
+        }
+        .scroll-bar::-webkit-scrollbar-thumb {
+            background: #f0d105;
+            border: 0px none #ffffff;
+            border-radius: 50px;
+        }
     </style>
 </head>
 
@@ -78,7 +93,66 @@
             </div>
         </div>
     </div>
-
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <div class="card bg-d card-shadow">
+                    <div class="card-header bg-dark d-flex justify-content-between">
+                        <label class="text-light fs-5"><i class="bi bi-regex"></i>   รายละเอียด API</label>
+                        <button type="button" class="btn btn-warning">ออกจากระบบ</button>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <label class="text-light">เบอร์โทรศัพท์</label>
+                                <input type="text" class="form-control bg-dark border-dark text-light" value="0994475548" readonly>
+                            </div>
+                            <div class="col">
+                                <label class="text-light">API Key</label>
+                                <input type="text" class="form-control bg-dark border-dark text-light" value="123456789" readonly>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col me-1">
+                <div class="card bg-d card-shadow">
+                    
+                </div>
+            </div>
+            <div class="col me-1">
+                <div class="card bg-d card-shadow">
+                    <div class="card-header bg-dark text-light">
+                        <i class="bi bi-table" style="margin-right: 5px;"></i>
+                        ตาราง การเรียกใช้งาน API ของคุณ
+                    </div>
+                    <div class="card-body p-0 scroll-bar">
+                        <table class="table table-dark mt-1 text-light mb-0">
+                            <thead>
+                                <tr class="text-center">
+                                    <th class="text-info">วัน</th>
+                                    <th class="text-warning">จำนวนเงิน</th>
+                                    <th style="color: #2cc47d;">สถานะ</th>
+                                    <th class="text-primary">Code</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="text-center">
+                                    <th>null</th>
+                                    <td>0.00</td>
+                                    <td>null</td>
+                                    <td>null</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-
 </html>
